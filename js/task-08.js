@@ -7,9 +7,9 @@ form.addEventListener("submit", function(event) {
     const password = this.elements.password;
 
 
-    if (email === 0 || password === 0) {
-        alert("Error, всі поля повинні бути заповнені");
-    } 
+    if (!email.value || !password.value) {
+       return alert("Error, всі поля повинні бути заповнені");
+    }
 
     const objectForm = {
         email: email.value,

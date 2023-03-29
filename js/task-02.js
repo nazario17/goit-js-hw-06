@@ -15,5 +15,4 @@ const li = [...ingredients].map(element => {
 })
 
 const ul = document.querySelector("#ingredients");
-ul.append(...li)
-console.log(ul);
+ul.append(...li);
